@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Registro.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">I.E BARAYA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Inicio.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Programas.html">Programas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Cursos.html">Cursos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Login.html">Log in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom05" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom07" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="validationCustom07" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom08" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="validationCustom08" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Sexo</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+                <div class="invalid-feedback">
+                    Selecciona un sexo válido.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom10" class="form-label">Estrato</label>
+                <select class="form-select" id="validationCustom10" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+                <div class="invalid-feedback">
+                    Selecciona un estrato válido.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom11" class="form-label">Grupo Sanguíneo</label>
+                <select class="form-select" id="validationCustom11" required>
+                    <option selected disabled value="">Elige...</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+                <div class="invalid-feedback">
+                    Selecciona un grupo sanguíneo válido.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom09" class="form-label">Hobbie</label>
+                <input type="text" class="form-control" id="validationCustom09" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepta los términos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                        Debe estar de acuerdo antes de enviar.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="button" onclick="validarFormulario()" class="btn btn-primary">Enviar formulario</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
